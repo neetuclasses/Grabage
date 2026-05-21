@@ -1,0 +1,155 @@
+/* ====== Basic Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+/* ====== Header Section ====== */
+.header {
+  background-color: rgb(0, 119, 128);     /* dark navy background */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  flex-wrap: nowrap;
+}
+
+/* ====== Logo ====== */
+.nav {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_items {
+  display: flex;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.nav_logo,
+.nav_link,
+.button {
+  color: white;
+}
+
+.nav_logo {
+  font-size: 25px;
+}
+
+.nav_link:hover {
+  color: #00b894;;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .nav_items {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .nav_link {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+  }
+}
+
+/* ====== Basic Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ====== Body Styling ====== */
+body {
+  background-color: #f5f7fa;  /* light background */
+  color: #222;
+  line-height: 1.6;
+}
+
+/* ====== About Container ====== */
+.about-container {
+  max-width: 1100px;
+  margin: 100px auto 60px auto;
+  background-color: #ffffff;
+  padding: 40px 50px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== Heading ====== */
+.about-container h4 {
+  text-align: center;
+  font-size: 28px;
+  color: rgb(0, 119, 128);
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+}
+
+/* ====== Paragraph ====== */
+.about-container p {
+  font-size: 16px;
+  color: #333;
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+/* ====== Image Box Section ====== */
+.image-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+/* ====== Images ====== */
+.image-box img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* ====== Footer ====== */
+footer {
+  text-align: center;
+  background-color: rgb(0, 119, 128);
+  color: #fff;
+  padding: 15px 0;
+  font-size: 15px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  letter-spacing: 0.5px;
+}

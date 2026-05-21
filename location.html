@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Location</title>
+  <link rel="stylesheet" href="from.css"/>
+
+  <header class="header">
+        <nav class = "nav">
+            <a href="index.html"class="nav_logo"><span>Garbpick</span></a>
+
+            <ul class="nav_items">
+                <li class="nav_items"></li><a href="index.html" class="nav_link">Home</a></li>
+                <li class="nav_items"></li><a href="about.html"class="nav_link">About us</a></li>
+                <li class="nav_items"></li><a href="service.html"class="nav_link">Service</a></li>
+                <li class="nav_items"></li><a href="location.html"class="nav_link">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f2f2f2;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .contact-box {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 280px;
+      margin-right: 20px;
+    }
+
+    .contact-info h3 {
+      margin-bottom: 10px;
+      color: #0073e6;
+    }
+
+    .contact-info p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .map {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 250px;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    /* ===== Branch Section ===== */
+    .branch-section {
+      margin-top: 40px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .branch-section h2 {
+      text-align: center;
+      color: #0073e6;
+      margin-bottom: 20px;
+    }
+
+    .branch-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .branch-card {
+      background: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .branch-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .branch-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .branch-card h3 {
+      color: #0073e6;
+      margin: 10px 0 5px;
+    }
+
+    .branch-card p {
+      font-size: 14px;
+      padding: 0 10px 10px;
+      color: #555;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Contact & Location</h2>
+
+    <div class="contact-box">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Email:</strong> example@email.com</p>
+        <p><strong>Address:</strong> Plot No. 21, Sector 10, Dwarka, New Delhi, India</p>
+      </div>
+
+      <!-- Google Map (Delhi Location) -->
+      <div class="map">
+        <h3>Our Delhi Location</h3>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.766043236992!2d77.20902191455916!3d28.61393908242353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd358fef4e1b%3A0xa1f6d5248a16b2a3!2sNew%20Delhi%2C%20Delhi%2C%20India!5e0!3m2!1sen!2sin!4v1696516589715!5m2!1sen!2sin" 
+          allowfullscreen="" 
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- ===== Branch Section ===== -->
+    <div class="branch-section">
+      <h2>Our Branches Across India</h2>
+
+      <div class="branch-grid">
+        <div class="branch-card">
+          <img src="imagefloder/Delhi.jpeg" alt="Delhi Branch">
+          <h3>Delhi</h3>
+          <p>Head office serving the NCR region with efficient waste management solutions.</p>
+        </div>
+
+        <div class="branch-card">
+          <img src="imagefloder/mumbai.jpg" alt="Mumbai Branch">
+          <h3>Mumbai</h3>
+          <p>Coastal waste collection and recycling unit for Western India.</p>
+        </div>
+
+        <div class="branch-card">
+          <img src="imagefloder/kolkata.jpg" alt="Kolkata Branch">
+          <h3>Kolkata</h3>
+          <p>Expanding green initiatives and urban waste recycling in East India.</p>
+        </div>
+
+        <div class="branch-card">
+          <img src="imagefloder/Chennai.jpg" alt="Chennai Branch">
+          <h3>Chennai</h3>
+          <p>South India’s center for eco-friendly disposal and smart waste collection.</p>
+        </div>
+
+        <div class="branch-card">
+          <img src="imagefloder/lucknow.webp" alt="Lucknow Branch">
+          <h3>Lucknow</h3>
+          <p>Serving Central India with modern garbage collection and recycling systems.</p>
+        </div>
+
+        <div class="branch-card">
+          <img src="imagefloder/jammu&kashmir.webp" alt="Jammu and Kashmir Branch">
+          <h3>Jammu & Kashmir</h3>
+          <p>Managing eco-friendly waste practices in the northern hilly regions of India.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+        &copy; 2025 Garbage Management Service | Clean India, Green India
+    </footer>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Garbage Pickup</title>
+  <link rel="stylesheet" href="file.css"/>
+</head>
+<body>
+  <header class="header">
+        <nav class = "nav">
+            <a href="index.html"class="nav_logo">Garbpick</a>
+
+            <ul class="nav_items">
+                <li class="nav_items"></li><a href="index.html" class="nav_link">Home</a></li>
+                <li class="nav_items"></li><a href="about.html"class="nav_link">About us</a></li>
+                <li class="nav_items"></li><a href="service.html"class="nav_link">Service</a></li>
+                <li class="nav_items"></li><a href="location.html"class="nav_link">Location</a></li>
+        
+            </ul>
+              
+        </nav>
+    </header>
+
+
+  <main class="container" role="main" aria-labelledby="contactTitle">
+    <section class="info" aria-label="Service information">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">G</div>
+        <div>
+          <h1 id="contactTitle">Garbage Pickup</h1>
+          <div class="hint">Fast • Responsible • Eco-friendly</div>
+        </div>
+      </div>
+
+      <p class="lead">
+        Need your household or commercial waste picked up quickly and responsibly? GreenWay provides scheduled and on-demand garbage pickup across the city: recyclable collection, organic waste composting, and safe disposal of non-recyclables. To arrange a pickup, report an overflowing bin, or request a recurring service, contact our support team below — we're available Monday to Saturday, 8:00 AM to 6:00 PM. For emergencies or bulky-item pickup, use the form to tell us your address and preferred time and we'll confirm within one business day.
+      </p>
+
+      <div class="contact-cards">
+        <div class="card"><small>Phone</small><strong>+91 98765 43210</strong></div>
+        <div class="card"><small>Email</small><strong>support@greenway.example</strong></div>
+        <div class="card"><small>Working hours</small><strong>Mon–Sat • 8:00 AM – 6:00 PM</strong></div>
+      </div>
+
+      <div style="margin-top:8px;font-size:13px;color:var(--muted)">
+        <strong>Tip:</strong> For faster service, include your full address and whether the waste is household, recyclable, organic, or bulky in the message.
+      </div>
+
+    </section>
+
+    <aside class="form-wrap" aria-label="Contact form">
+      <h2>Request a Pickup / Contact Us</h2>
+
+      <!-- ✅ FORM FIXED HERE -->
+      <form id="contactForm" action="submit.php" method="POST">
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="e.g. Neetu" required />
+        </div>
+
+        <div>
+          <label for="phone">Phone number</label>
+          <input id="phone" name="phone" type="text" placeholder="+91 98765 43210" inputmode="tel" required />
+        </div>
+
+        <div>
+          <label for="email">Email (optional)</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" />
+        </div>
+
+        <div>
+          <label for="address">Pickup address</label>
+          <input id="address" name="address" type="text" placeholder="House no., colony, city, PIN" required />
+        </div>
+
+        <div>
+          <label for="details">Details (type of waste, preferred pickup date/time)</label>
+          <textarea id="details" name="details" placeholder="Household waste / recyclables / bulky items. Preferred time: Tomorrow 10–12" required></textarea>
+        </div>
+
+        <!-- <div>
+          <label for="image">Upload image (jpg/png)</label>
+          <input id="image" type="file" name="image" accept="image/*" required />
+          <img id="imagePreview" style="display:none; margin-top:8px; max-width:100%; border-radius:8px;" />
+        </div> -->
+
+        <div style="display:flex; gap:10px; align-items:center;">
+          <button type="submit" class="btn">Send request</button>
+          <div class="hint">Or call <strong style="color:var(--accent)">+91 98765 43210</strong></div>
+        </div>
+
+        <!-- Feedback messages -->
+        <div id="feedbackOk" class="feedback ok" role="status" style="display:none; color:green;">
+          ✅ Request sent! We'll contact you shortly.
+        </div>
+        <div id="feedbackErr" class="feedback err" role="alert" style="display:none; color:red;">
+          ⚠️ Please fix errors in the form.
+        </div>
+      </form>
+    </aside>
+  </main>
+
+</body>
+</html>
+

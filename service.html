@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Service</title>
+  <link rel="stylesheet" href="from.css"/>
+
+  <header class="header">
+        <nav class = "nav">
+            <a href="index.html"class="nav_logo"><span>Garbpick</span></a>
+
+            <ul class="nav_items">
+                <li class="nav_items"></li><a href="index.html" class="nav_link">Home</a></li>
+                <li class="nav_items"></li><a href="about.html"class="nav_link">About us</a></li>
+                <li class="nav_items"></li><a href="service.html"class="nav_link">Service</a></li>
+                <li class="nav_items"></li><a href="location.html"class="nav_link">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+  <style>
+    /*  Global Styles */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #f6f9f8;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5 {
+      color: #185b55;
+      font-weight: 600;
+    }
+
+    p {
+      color: #444;
+    }
+
+    /*  Service Intro */
+    .service-container {
+      max-width: 1100px;
+      margin: 40px auto 24px;
+      background: #fff;
+      padding: 32px 24px;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-container:hover {
+      transform: scale(1.01);
+    }
+
+    .service-container h5 {
+      font-size: 26px;
+      margin-bottom: 16px;
+    }
+
+    .service-container p {
+      font-size: 15px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Services Section */
+    .services-section {
+      max-width: 1150px;
+      margin: 50px auto;
+      padding: 0 16px;
+    }
+
+    .services-header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+
+    .services-header h2 {
+      font-size: 28px;
+      margin-bottom: 6px;
+    }
+
+    .services-header p {
+      color: #555;
+      font-size: 15px;
+    }
+
+    /*  Services Grid */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 26px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .service-card .content {
+      padding: 18px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .service-card h3 {
+      font-size: 17px;
+      margin: 0;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #555;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .tag {
+      align-self: start;
+      font-size: 12px;
+      font-weight: 500;
+      color: #185b55;
+      background: #e6f4f3;
+      border-radius: 999px;
+      padding: 4px 10px;
+      margin-top: 6px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main Service Intro -->
+  <div class="service-container">
+    <h5> Our Garbage Pickup Service</h5>
+    <p>
+      We are dedicated to keeping your surroundings clean, healthy, and
+      environmentally friendly. Our professional team ensures timely
+      collection and responsible disposal of household, commercial, and
+      community waste. Choose our eco-friendly service to support a cleaner
+      neighborhood and a sustainable future. Our vehicles arrive within
+      <b>2 days</b> to collect waste from homes, streets, and public areas.
+    </p>
+  </div>
+
+  <!--  Service Offerings -->
+  <section class="services-section" aria-label="Our services">
+    <div class="services-header">
+      <h2>What We Offer</h2>
+      <p>Reliable, eco-friendly waste management tailored for you</p>
+    </div>
+
+    <div class="services-grid">
+      <article class="service-card">
+        <img src="imagefloder/Household Pickup.jpg" alt="Household garbage pickup" />
+        <div class="content">
+          <h3>Household Pickup</h3>
+          <p>Scheduled door-to-door waste collection to maintain neighborhood cleanliness.</p>
+          <span class="tag">Within 48 Hours</span>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="imagefloder/Bulk Waste.jpg" alt="Bulk waste removal" />
+        <div class="content">
+          <h3>Bulk Waste</h3>
+          <p>Effortless pickup for furniture, electronics, and construction debris.</p>
+          <span class="tag">On Demand</span>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="imagefloder/Recycling.jpg" alt="Recycling services" />
+        <div class="content">
+          <h3>Recycling</h3>
+          <p>Responsible recycling of paper, plastic, metal, and glass materials.</p>
+          <span class="tag">Eco Priority</span>
+        </div>
+      </article>
+
+      <article class="service-card">
+        <img src="imagefloder/Organic Composting.jpeg" alt="Organic waste composting" />
+        <div class="content">
+          <h3>Organic Composting</h3>
+          <p>Transform kitchen and garden waste into nutrient-rich compost.</p>
+          <span class="tag">Green Option</span>
+        </div>
+      </article>
+    </div>
+  </section>
+  <footer>
+        &copy; 2025 Garbage Management Service | Clean India, Green India
+    </footer>
+</body>
+</html>
