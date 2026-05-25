@@ -256,6 +256,120 @@ a {
   margin-top: 15px;
 }
 
-.request_from{
-  padding: 2px;
+request_page {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  width: 100%;
+  background: linear-gradient(135deg, #1a1a1a, #2d5a27);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 20px 40px;
 }
+
+.request_card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 36px 30px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+.request_card h2 {
+  font-size: 22px;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.request_card .field {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.request_card label {
+  font-size: 13px;
+  color: #555;
+  font-weight: 500;
+}
+
+.request_card input,
+.request_card select,
+.request_card textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s;
+  font-family: 'Poppins', sans-serif;
+}
+
+.request_card input:focus,
+.request_card select:focus,
+.request_card textarea:focus {
+  border-color: green;
+}
+
+.request_card textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.request_card .submit_btn {
+  width: 100%;
+  padding: 12px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.request_card .submit_btn:hover {
+  background: #1a5c1a;
+}
+
+.success_msg {
+  display: none;
+  text-align: center;
+  color: green;
+  font-size: 14px;
+  margin-top: 14px;
+}
+
+/* ✅ Mobile responsive fixes */
+@media (max-width: 480px) {
+  .nav_items {
+    column-gap: 14px;
+  }
+
+  .nav_logo {
+    font-size: 18px;
+  }
+
+  .nav_link {
+    font-size: 13px;
+  }
+
+  .button {
+    padding: 5px 14px;
+    font-size: 12px;
+  }
+
+  .form_container {
+    width: 92%;
+    padding: 24px 18px;
+  }
+
+  .request_card {
+    padding: 28px 18px;
+  }
