@@ -347,22 +347,22 @@ request_page {
 }
 
 /* ✅ Mobile responsive fixes */
-@media (max-width: 280px) {
+@media (max-width: 480px) {
   .nav_items {
     column-gap: 10px;
   }
 
   .nav_logo {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .nav_link {
-    font-size: 13px;
+    font-size: 11px;
   }
 
   .button {
-    padding: 5px 14px;
-    font-size: 12px;
+    padding: 4px 10px;
+    font-size: 11px;
   }
 
   .form_container {
@@ -373,3 +373,4 @@ request_page {
   .request_card {
     padding: 28px 18px;
   }
+}
