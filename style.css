@@ -347,9 +347,9 @@ request_page {
 }
 
 /* ✅ Mobile responsive fixes */
-@media (max-width: 480px) {
+@media (max-width: 280px) {
   .nav_items {
-    column-gap: 14px;
+    column-gap: 10px;
   }
 
   .nav_logo {
