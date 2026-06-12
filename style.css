@@ -345,6 +345,9 @@ request_page {
   font-size: 14px;
   margin-top: 14px;
 }
+/* fix home section being hidden behind navbar*/
+.home{
+  padding-top: 80px;
 
 /* ✅ Mobile responsive fixes */
 @media (max-width: 480px) {
