@@ -264,20 +264,21 @@ request_page {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 20px 40px;
+  padding: 90px 10px 20px;
 }
 
 .request_card {
   background: #fff;
-  border-radius: 16px;
-  padding: 36px 30px;
+  border-radius: 12px;
+  padding: 20px 15px;
   width: 100%;
-  max-width: 480px;
+  max-width: 100%;
+  margin: 0 auto;
   box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
 .request_card h2 {
-  font-size: 22px;
+  font-size: 18px;
   color: #1a1a1a;
   margin-bottom: 24px;
   text-align: center;
@@ -300,10 +301,10 @@ request_page {
 .request_card select,
 .request_card textarea {
   width: 100%;
-  padding: 10px 14px;
+  padding: 8px 10px;
   border: 1.5px solid #ccc;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 13px;
   color: #333;
   outline: none;
   transition: border-color 0.2s;
@@ -323,12 +324,12 @@ request_page {
 
 .request_card .submit_btn {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   background: green;
   color: white;
   border: none;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 14px;
   cursor: pointer;
   margin-top: 8px;
   transition: background 0.2s;
