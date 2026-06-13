@@ -255,8 +255,12 @@ a {
   text-align: center;
   margin-top: 15px;
 }
+html,
+body{
+  width : 100%;
+  overflow-x : hidden;
 
-request_page {
+.request_page {
   min-height: 100vh;
   min-height: -webkit-fill-available;
   width: 100%;
@@ -351,7 +355,14 @@ request_page {
   padding-top: 80px;
 
 /* ✅ Mobile responsive fixes */
-@media (max-width: 480px) {
+@media (max-width: 768px) { 
+  .header{
+    padding: 0 10px;
+  }
+  .nav{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
   .nav_items {
     column-gap: 10px;
   }
