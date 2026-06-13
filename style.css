@@ -69,12 +69,13 @@ a {
 
 /* Home Section */
 .home {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-image: url("garbageimage.jpg");
   background-color: #0a0a0a; /* fallback while image loads */
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -364,11 +365,13 @@ body{
     gap: 10px;
   }
   .nav_items {
-    column-gap: 10px;
+    column-gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .nav_logo {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .nav_link {
@@ -381,11 +384,12 @@ body{
   }
 
   .form_container {
-    width: 92%;
-    padding: 24px 18px;
+    width: 95%;
+    max-width: 350px;
   }
 
   .request_card {
-    padding: 28px 18px;
+    width: 100%;
+    max-width: 100%;
   }
 }
