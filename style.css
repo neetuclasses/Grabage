@@ -260,7 +260,7 @@ html,
 body{
   width : 100%;
   overflow-x : hidden;
-
+}
 .request_page {
   min-height: 100vh;
   min-height: -webkit-fill-available;
@@ -354,7 +354,7 @@ body{
 /* fix home section being hidden behind navbar*/
 .home{
   padding-top: 80px;
-
+}
 /* ✅ Mobile responsive fixes */
 @media (max-width: 768px) { 
   .header{
