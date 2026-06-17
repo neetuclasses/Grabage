@@ -37,6 +37,7 @@ a {
   display: flex;
   align-items: center;
   column-gap: 50px;
+  list-style: none;
 }
 
 .nav_logo,
