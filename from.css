@@ -85,3 +85,24 @@ footer {
   width: 100%;
   letter-spacing: 0.5px;
 }
+@media (max-width : 768px){
+  .about-container{
+    margin: 80px 15px 40px 15px;
+    padding: 20px 20px;
+  }
+  .about-container h4{
+    font-size: 22px;
+  }
+  .image-box img{
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+  }
+  .nav{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav_items{
+    column-gap:0;
+  }
+}
