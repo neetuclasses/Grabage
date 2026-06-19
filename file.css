@@ -336,6 +336,15 @@ textarea {
     gap: 10px;
   }
   .nav_items{
-    column-gap:0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 12px;
+    row-gap: 8px;
+  }
+  .nav_link{
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 14px;
   }
 }
